@@ -10,6 +10,16 @@ Vue.config.productionTip = false
 
 Vue.use(BootstrapVue);
 
+
+// change background color of pages
+router.afterEach((to, from) => {
+  if (to.name === "Login") {
+    document.querySelector("body").classList.add("grey");
+  } else {
+    document.querySelector("body").classList.remove("grey");
+  }
+});
+
 new Vue({
   router,
   store,

@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "deploy": "aws s3 sync ./dist s3://my-saas"
   },
   "dependencies": {
     "bootstrap-vue": "^2.0.0-rc.11",

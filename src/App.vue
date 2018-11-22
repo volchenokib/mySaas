@@ -46,9 +46,28 @@
   </div>
 </template>
 
+
+
+
+<script>
+export default {
+  data: function() {
+    return {
+    };
+  },
+}
+</script>
+
+
+
+
 <style lang="scss">
 @import './assets/scss/common.scss';
 @import './assets/scss/variables.scss';
+
+.grey {
+  background-color: #f7f7f7;
+}
 
 // ----------------------------------- Navigations start
 
